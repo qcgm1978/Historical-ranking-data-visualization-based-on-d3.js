@@ -16,18 +16,18 @@
   // 如果你的日期格式为标准的日期格式，则可以无视数据排序，达到自动按照日期顺序排序的效果。
   // 开启auto_sort可以实现时间的自动补间。
   auto_sort: false,
-  timeFormat : "%Y-%m-%d",
+  timeFormat: "%Y-%m-%d",
 
   // 倒序，使得最短的条位于最上方
   reverse: false,
 
   // 颜色根据什么字段区分？
-  divide_by: 'name',
+  divide_by: 'type',
 
   // 字段的值与其对应的颜色值
   color: {
-    '张三':'#00318b',
-    '李四':'#007123',
+    '张三': '#00318b',
+    '李四': '#007123',
   },
 
   // 颜色绑定增长率
@@ -38,10 +38,10 @@
   typeLabel: "右侧文字",
   // 榜首项目信息的水平位置 。
   item_x: 400,
-  
+
   // 时间点间隔时间。
   interval_time: 1,
-  
+
   // 上方文字水平高度。
   text_y: -50,
 
@@ -91,10 +91,10 @@
   long: false,
 
   // 延迟多少个时间节点开始
-  wait:0,
+  wait: 0,
 
   // 单独控制交换动画速度倍率
-  update_rate:1,
+  update_rate: 1,
 
   // 开启匀速动画效果
   // animation:'linear',

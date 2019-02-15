@@ -366,13 +366,13 @@ function draw(data) {
             });
 
         barEnter.append("rect").attr("width",
-                function (d) {
-                    if (enter_from_0) {
-                        return 0;
-                    } else {
-                        return xScale(currentData[currentData.length - 1].value);
-                    }
-                }).attr("fill-opacity", 0)
+            function (d) {
+                if (enter_from_0) {
+                    return 0;
+                } else {
+                    return xScale(currentData[currentData.length - 1].value);
+                }
+            }).attr("fill-opacity", 0)
             .attr("height", 26).attr("y", 50)
             .style("fill", d => getColor(d))
             .transition("a")
@@ -380,11 +380,11 @@ function draw(data) {
             .duration(2490 * interval_time)
             .attr("y", 0).attr(
                 "width", d =>
-                xScale(xValue(d)))
+                    xScale(xValue(d)))
             .attr("fill-opacity", 1);
 
         barEnter.append("text").attr("y", 50).attr("fill-opacity", 0).style('fill', d => getColor(d)).transition("2").delay(500 * interval_time).duration(
-                2490 * interval_time)
+            2490 * interval_time)
             .attr(
                 "fill-opacity", 1).attr("y", 0)
             .attr("class", function (d) {
@@ -401,14 +401,14 @@ function draw(data) {
             })
         // bar上文字
         var barInfo = barEnter.append("text").attr("x",
-                function (d) {
-                    if (long) return 10;
-                    if (enter_from_0) {
-                        return 0;
-                    } else {
-                        return xScale(currentData[currentData.length - 1].value);
-                    }
-                })
+            function (d) {
+                if (long) return 10;
+                if (enter_from_0) {
+                    return 0;
+                } else {
+                    return xScale(currentData[currentData.length - 1].value);
+                }
+            })
             .attr("stroke", d => getColor(d))
             .attr("class", function () {
                 return "barInfo"
@@ -462,16 +462,16 @@ function draw(data) {
         if (!long) {
 
             barEnter.append("text").attr("x",
-                    function () {
-                        if (long) {
-                            return 10;
-                        }
-                        if (enter_from_0) {
-                            return 0;
-                        } else {
-                            return xScale(currentData[currentData.length - 1].value);
-                        }
-                    }).attr("y", 50).attr("fill-opacity", 0).style('fill', d => getColor(d)).transition()
+                function () {
+                    if (long) {
+                        return 10;
+                    }
+                    if (enter_from_0) {
+                        return 0;
+                    } else {
+                        return xScale(currentData[currentData.length - 1].value);
+                    }
+                }).attr("y", 50).attr("fill-opacity", 0).style('fill', d => getColor(d)).transition()
                 .duration(2990 * interval_time).tween(
                     "text",
                     function (d) {
@@ -484,7 +484,7 @@ function draw(data) {
                             value = self.textContent
                         };
                     }).attr(
-                    "fill-opacity", 1).attr("y", 0)
+                        "fill-opacity", 1).attr("y", 0)
                 .attr("class", function (d) {
                     return "value"
                 }).attr("x", d => {
@@ -500,14 +500,14 @@ function draw(data) {
             .attr("width", d => xScale(xValue(d)))
 
         barUpdate.select(".label").attr("class", function (d) {
-                return "label ";
-            }).style('fill', d => getColor(d))
+            return "label ";
+        }).style('fill', d => getColor(d))
             .attr("width", d => xScale(xValue(d)))
         if (!long) {
 
             barUpdate.select(".value").attr("class", function (d) {
-                    return "value"
-                }).style('fill', d => getColor(d))
+                return "value"
+            }).style('fill', d => getColor(d))
                 .attr("width", d => xScale(xValue(d)))
 
         }
@@ -578,13 +578,13 @@ function draw(data) {
         var barExit = bar.exit().attr("fill-opacity", 1).transition().duration(2500 * interval_time)
 
         barExit.attr("transform", function (d) {
-                if (Number(d.value) > avg && allow_up) {
+            if (Number(d.value) > avg && allow_up) {
 
-                    return "translate(0," + "-100" + ")";
-                }
-                return "translate(0," + "880" + ")";
+                return "translate(0," + "-100" + ")";
+            }
+            return "translate(0," + "880" + ")";
 
-            })
+        })
             .remove().attr("fill-opacity", 0);
         barExit.select("rect").attr("fill-opacity", 0).attr("width", xScale(currentData[currentData.length - 1]["value"]))
         if (!long) {
