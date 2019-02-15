@@ -1,16 +1,99 @@
 name,type,value,date
-
-Michel Foucault	Coll®®ge de France	782097	242
-2	Pierre Bourdieu	Centre de Sociologie Europ®¶enne; Coll®®ge de France	574044	249
-3	Sigmund Freud	University of Vienna	482648	272
-4	Albert Bandura	Stanford University	451545
-
-????,????,12312,01-01
-????,??,21412,01-01
-????????,????,41243,01-01
-????,????,22312,01-02
-????,??,61412,01-02
-????????,????,11243,01-02
-????,????,32312,01-03
-????,??,11412,01-03
-????????,????,51243,01-03
+Graham Colditz,Washington University in St Louis,279,291320
+Sigmund Freud,University of Vienna,273,542097
+Ronald C Kessler,Harvard University,266,332789
+JoAnn E Manson,Harvard Medical School; Brigham and Womens Hospital; Harvard School of Public Health,265,266228
+Shizuo Akira,Osaka University,262,326083
+Robert Langer #,Massachusetts Institute of Technology MIT,261,272689
+Pierre Bourdieu,Centre de Sociologie Europ√©enne; Coll√®ge de France,259,646337
+Eugene Braunwald,Brigham and Women's Hospital Harvard Medical School,259,333797
+Michel Foucault,Coll√®ge de France,256,889620
+Eric Lander,Broad Institute Harvard MIT,252,377613
+Bert Vogelstein,Johns Hopkins University,251,368298
+Michael Graetzel,Ecole Polytechnique F√©d√©rale de Lausanne,248,306860
+Michael Karin,University of California San Diego,237,254130
+Salim Yusuf,McMaster University,234,281395
+Gordon Guyatt,McMaster University,233,234557
+Frank B Hu,Harvard University,231,217738
+Richard A Flavell,Yale University; HHMI,231,200212
+T W Robbins,University of Cambridge,226,158277
+Carlo Croce,Ohio State University,218,217243
+Steven A Rosenberg,National Institutes of Health NIH,218,199838
+Eric Topol,Scripps Research Institute,217,224750
+Zhong Lin Wang,Georgia Institute of Technology,216,187510
+Chris Frith,University College London,216,178098
+Kenneth Kinzler,Johns Hopkins University,215,245903
+Paul M Ridker,Harvard Medical School,214,257161
+Matthias Mann #,Max Planck Gesellschaft MPG,214,211680
+Karl Friston,University College London,213,207970
+Guido Kroemer,INSERM,213,201733
+Yi Hwa Liu,Yale University,212,233537
+A S Fauci,National Institutes of Health NIH,212,193115
+Peter Libby,Harvard Medical School,212,190334
+Fred H Gage #,Salk Institute for Biological Studies,211,184977
+Douglas G Altman #,Oxford University,210,406486
+S B Kim,Seoul National University,210,230313
+John Trojanowski,University of Pennsylvania,210,177309
+Younan Xia,Georgia Institute of Technology,210,176835
+Ralph B D'Agostino,Boston University,208,195160
+Daniel Levy,National Institutes of Health NIH,206,206998
+Joseph E Stiglitz,Columbia University,204,264661
+Mark P Mattson,National Institutes of Health NIH,202,149150
+Yunfei Gao,Purdue University,201,217881
+Heriberto Castilla,CINVESTAV IPN,200,198261
+Richard Frackowiak,University of Lausanne,200,153608
+Jacques Derrida,√âcole des Hautes √âtudes en Sciences Sociales de Paris EHESS,199,271084
+Alan Heeger,University of California Santa Barbara,198,199973
+Eric Rimm,Harvard University,198,157778
+Albert Einstein,Princeton University,197,238965
+Amartya Sen,Harvard University,196,282697
+Craig Thompson,Memorial Sloan Kettering Cancer Center,194,166320
+Eugene Koonin,National Institutes of Health NIH,194,161371
+Raymond J Dolan,University College London,194,152617
+H J Kim,Kyungpook National University,193,151325
+Stephen V Faraone,SUNY Upstate Medical University,193,141829
+Edward Witten192,192091
+A Bodek,University of Rochester,192,179051
+Michael G Marmot,University College London,192,168245
+David J Hunter,Harvard University,192,160948
+Lewis C Cantley,Weill Cornell Medical College,191,155955
+Diederick E Grobbee,University Medical Center Utrecht,190,176634
+Ralph Hruban,Johns Hopkins University,190,145626
+Daniel R Weinberger,Lieber Institute for Brain Development,190,139886
+Dennis Charney,Icahn School of Medicine at Mount Sinai,190,138166
+Joao Seixas,Instituto Superior Tecnico; LIP,189,200234
+C Florez,Universidad de los Andes,189,197971
+U K Yang,Seoul National University,189,187811
+Robert A Weinberg,Massachusetts Institute of Technology MIT,188,233687
+Robert Gardner,University of Chicago,188,215488
+James E Brau,University of Oregon,188,175823
+Glen Cowan,Royal Holloway University of London,187,259267
+Adam Warburton,McGill University,187,164641
+Harlan Krumholz,Yale University,187,161658
+Joey Huston,Michigan State University,186,238555
+Swagato Banerjee,University of Louisville,186,231159
+Peer Bork,European Molecular Biology Laboratory,186,187829
+Farkhad Khalil Zada,Institute of Physics of ANAS,186,173527
+Albert Bandura,Stanford University,184,520091
+Thomas Doherty,University of Glasgow,184,215912
+Alberto Mantovani,Istituto Clinico Humanitas; Universit√† degli Studi di Milano,184,153290
+Joan Massague,Memorial Sloan Kettering Cancer Cencer,184,151700
+Cyrus Cooper,University of Southampton; Oxford University; Mayo Clinic,184,140433
+Valentin Fuster,Centro Nacional de Investigaciones Cardiovasculares CNIC,183,223435
+Daniela Bortoletto,University of Oxford,183,175516
+Vivek A Sharma,University of California San Diego,183,169017
+Pekka Sinervo,University of Toronto,183,164392
+Stuart H Orkin,Harvard University,183,104591
+Bertrand Nicquevert,CERN European Organization for Nuclear Research,182,203236
+Krzysztof Sliwa,Tufts University,182,162230
+George P Chrousos,University of Athens,182,137377
+Alan Evans,McGill University,182,130871
+Bharat B Aggarwal,University of Texas MD Anderson Cancer Center,182,122378
+Michael G Rosenfeld,University of California San Diego,182,114706
+Deywis Moreno,Universidad Antonio Nari√±o,181,203222
+Albert M Sirunyan,Yerevan Physics Institute,181,195765
+Hongjie Dai,Stanford University,181,179067
+David M Strom,University of Oregon,181,159044
+Duncan Carlsmith,University of Wisconsin Madison,181,152978
+Andr√©s Pacheco Pages,Institut de Fisica d'Altes Energies Barcelona,180,203089
+Yusuke Nakamura,University of Chicago; University of Tokyo; RIKEN; University of Utah,180,165720
