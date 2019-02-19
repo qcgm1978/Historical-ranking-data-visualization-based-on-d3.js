@@ -9,6 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "serve": "http-server && open http://127.0.0.1:8080/src/bargraph.html",
     "start": "nodemon node.js visual.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
