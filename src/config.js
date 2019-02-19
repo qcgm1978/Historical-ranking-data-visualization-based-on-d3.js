@@ -15,7 +15,7 @@
   // 如果关闭，排序顺序为csv表格的时间字段自上而下的出现顺序。
   // 如果你的日期格式为标准的日期格式，则可以无视数据排序，达到自动按照日期顺序排序的效果。
   // 开启auto_sort可以实现时间的自动补间。
-  auto_sort: false,
+  auto_sort: true,
   timeFormat: "%Y-%m-%d",
 
   // 倒序，使得最短的条位于最上方
@@ -51,7 +51,7 @@
   offset: 300,
 
   // 长度小于display_barInfo的bar将不显示barInfo。
-  display_barInfo: 200,
+  display_barInfo: 2000,
 
   // 使用计数器
   // 注意！使用计时器和使用类型目前不能兼容，即不能同时开启！

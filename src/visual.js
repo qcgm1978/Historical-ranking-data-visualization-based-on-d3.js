@@ -19,6 +19,7 @@ $('#inputfile').change(function () {
 });
 
 function draw(data) {
+    $('#inputfile').attr('hidden', true);
     var date = [];
     data.forEach(element => {
         if (date.indexOf(element["date"]) == -1) {

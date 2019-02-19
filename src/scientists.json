@@ -1,0 +1,272 @@
+[
+    {
+        "type": "University of Vienna",
+        "value": "273",
+        "name": "Sigmund Freud",
+        "date": "1856-05-06"
+    },
+    {
+        "type": "Osaka University",
+        "value": "262",
+        "name": "Shizuo Akira",
+        "date": "1953-01-27"
+    },
+    {
+        "type": "Washington University in St Louis",
+        "value": "279",
+        "name": "Graham Colditz",
+        "date": "1954-11-01"
+    },
+    {
+        "type": "Collège de France",
+        "value": "256",
+        "name": "Michel Foucault",
+        "date": "1926-10-15"
+    },
+    {
+        "type": "Centre de Sociologie Européenne; Collège de France",
+        "value": "259",
+        "name": "Pierre Bourdieu",
+        "date": "1930-08-01"
+    },
+    {
+        "type": "Broad Institute Harvard MIT",
+        "value": "252",
+        "name": "Eric Lander",
+        "date": "1957-02-03"
+    },
+    {
+        "type": "",
+        "value": 0,
+        "name": "Robert S. Langer",
+        "date": "1948-08-29"
+    },
+    {
+        "type": "Brigham and Women's Hospital Harvard Medical School",
+        "value": "259",
+        "name": "Eugene Braunwald",
+        "date": "1929-08-15"
+    },
+    {
+        "type": "Johns Hopkins University",
+        "value": "251",
+        "name": "Bert Vogelstein",
+        "date": "1949-06-02"
+    },
+    {
+        "type": "McMaster University",
+        "value": "233",
+        "name": "Gordon Guyatt",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "McMaster University",
+        "value": "234",
+        "name": "Salim Yusuf",
+        "date": "1952-11-26"
+    },
+    {
+        "type": "University of California San Diego",
+        "value": "237",
+        "name": "Michael Karin",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "Ohio State University",
+        "value": "218",
+        "name": "Carlo Croce",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "",
+        "value": 0,
+        "name": "Paul Ridker",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "University College London",
+        "value": "216",
+        "name": "Chris Frith",
+        "date": "1942-03-16"
+    },
+    {
+        "type": "Scripps Research Institute",
+        "value": "217",
+        "name": "Eric Topol",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "Georgia Institute of Technology",
+        "value": "216",
+        "name": "Zhong Lin Wang",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "",
+        "value": 0,
+        "name": "Kenneth W. Kinzler",
+        "date": "1962-01-30"
+    },
+    {
+        "type": "",
+        "value": 0,
+        "name": "Matthias Mann",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "",
+        "value": 0,
+        "name": "Karl J. Friston",
+        "date": "1959-07-12"
+    },
+    {
+        "type": "INSERM",
+        "value": "213",
+        "name": "Guido Kroemer",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "",
+        "value": 0,
+        "name": "Doug Altman",
+        "date": "1948-07-12"
+    },
+    {
+        "type": "Harvard Medical School",
+        "value": "212",
+        "name": "Peter Libby",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "National Institutes of Health NIH",
+        "value": "206",
+        "name": "Daniel Levy",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "Georgia Institute of Technology",
+        "value": "210",
+        "name": "Younan Xia",
+        "date": "1965-10-16"
+    },
+    {
+        "type": "École des Hautes Études en Sciences Sociales de Paris EHESS",
+        "value": "199",
+        "name": "Jacques Derrida",
+        "date": "1930-07-15"
+    },
+    {
+        "type": "",
+        "value": 0,
+        "name": "Alan J. Heeger",
+        "date": "1936-01-22"
+    },
+    {
+        "type": "Princeton University",
+        "value": "197",
+        "name": "Albert Einstein",
+        "date": "1879-03-14"
+    },
+    {
+        "type": "Harvard University",
+        "value": "196",
+        "name": "Amartya Sen",
+        "date": "1933-11-03"
+    },
+    {
+        "type": "National Institutes of Health NIH",
+        "value": "194",
+        "name": "Eugene Koonin",
+        "date": "1956-10-26"
+    },
+    {
+        "type": "Memorial Sloan Kettering Cancer Center",
+        "value": "194",
+        "name": "Craig Thompson",
+        "date": "1975-09-21"
+    },
+    {
+        "type": "Harvard University",
+        "value": "198",
+        "name": "Eric Rimm",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "",
+        "value": 0,
+        "name": "Dennis S. Charney",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "University of Chicago",
+        "value": "188",
+        "name": "Robert Gardner",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "Royal Holloway University of London",
+        "value": "187",
+        "name": "Glen Cowan",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "European Molecular Biology Laboratory",
+        "value": "186",
+        "name": "Peer Bork",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "Stanford University",
+        "value": "184",
+        "name": "Albert Bandura",
+        "date": "1925-12-04"
+    },
+    {
+        "type": "University of Glasgow",
+        "value": "184",
+        "name": "Thomas Doherty",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "",
+        "value": 0,
+        "name": "Joan Massagué",
+        "date": "1953-04-30"
+    },
+    {
+        "type": "Istituto Clinico Humanitas; Università degli Studi di Milano",
+        "value": "184",
+        "name": "Alberto Mantovani",
+        "date": "1948-10-29"
+    },
+    {
+        "type": "Centro Nacional de Investigaciones Cardiovasculares CNIC",
+        "value": "183",
+        "name": "Valentin Fuster",
+        "date": "1943-01-01"
+    },
+    {
+        "type": "University of Oxford",
+        "value": "183",
+        "name": "Daniela Bortoletto",
+        "date": "1970-01-01"
+    },
+    {
+        "type": "McGill University",
+        "value": "182",
+        "name": "Alan Evans",
+        "date": "1949-06-14"
+    },
+    {
+        "type": "Stanford University",
+        "value": "181",
+        "name": "Hongjie Dai",
+        "date": "1966-05-02"
+    },
+    {
+        "type": "University of Chicago; University of Tokyo; RIKEN; University of Utah",
+        "value": "180",
+        "name": "Yusuke Nakamura",
+        "date": "1970-01-01"
+    }
+]

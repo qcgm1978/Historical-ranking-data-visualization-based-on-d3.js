@@ -61,44 +61,56 @@ $(() => {
         }).then((docList) => {
             let allLinks = docList.map(doc => {
                 let date = null
+                const infobox = doc.infobox(0)
+                const name = doc.options.title || (infobox.get('name') || infobox.get('birth_name')).data.text
                 try {
-                    date = doc.infobox(0).get('birth_date').data.text
+                    date = infobox.get('birth_date').data.text
                 } catch (err) {
                     date = null
                 }
-                return date
-            }
-            );
+                return {
+                    name,
+                    date
+                }
+            });
             return (allLinks);
         }
         )
     }
-    $.ajax({
-        // request type ( GET or POST )
-        type: "GET",
+    const requestData = _ => {
+        $.ajax({
+            // request type ( GET or POST )
+            type: "GET",
 
-        // the URL to which the request is sent
-        url: './researchers.csv'
-    }).then(result => {
-        $('#inputfile').attr('hidden', true);
-        let data = d3.csvParse(result);
-        const len = data.length
-        const requestNames = data.reduce((acc, item) => acc.concat([item.name]), [])
-        getBornDate(requestNames.slice(0, len)).then(names => {
-            const barData = data.slice(0, len).map((item, i) => {
-                const date = new Date(names[i]);
-                const month = date.getMonth() + 1;
-                const day = date.getDate();
-                return {
-                    ...item,
-                    date: `${date.getFullYear()}-${month >= 10 ? month : ('0' + month)}-${day >= 10 ? day : '0' + day}`
-                };
-            });
-            localStorage.barData = JSON.stringify(barData)
-            draw(barData)
-        }
-        )
+            // the URL to which the request is sent
+            url: './researchers.csv'
+        }).then(result => {
+            let data = d3.csvParse(result);
+            const len = data.length
+            const requestNames = data.reduce((acc, item) => acc.concat([item.name]), [])
+            getBornDate(requestNames.slice(0, len)).then(names => {
+                const barData = names.map((item, i) => {
+                    const currentItem = data.find(it => it.name === item.name)
+                    const date = new Date(item.date);
+                    const month = date.getMonth() + 1;
+                    const day = date.getDate();
+                    const formatDate = `${date.getFullYear()}-${month >= 10 ? month : ('0' + month)}-${day >= 10 ? day : '0' + day} ${date.getHours()}:${date.getMinutes()}`
+                    return {
+                        type: '',
+                        value: 0,
+                        name: item.name,
+                        ...currentItem,
+                        date: formatDate
+                    };
+                });
+                localStorage.barData = JSON.stringify(barData)
+                draw(barData)
+            }
+            )
 
 
-    })
+        })
+    }
+    // requestData()
+    draw(JSON.parse(localStorage.barData))
 })
