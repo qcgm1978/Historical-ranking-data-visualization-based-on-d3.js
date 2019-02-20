@@ -55,27 +55,54 @@ $(() => {
         }
         )
     }
+    const getAccomplishment = ({ doc = {
+        get() {
+            return false
+        }
+    }, fields = [] }) => {
+        const infobox = doc.infobox(0), sentences = doc.sentences(0)
+        let accomplishment = ''
+        if (infobox) {
+
+            accomplishment = fields.find(item => infobox.get(item))
+            accomplishment = accomplishment && infobox.get(accomplishment).data.text
+        } else if (sentences && sentences.data.links) {
+            try {
+                accomplishment = sentences.data.links[0].page
+            } catch (e) {
+                debugger
+            }
+        }
+        return accomplishment;
+    }
     const getBornDate = names => {
         return wtf.fetch(names, 'en', {
             'Api-User-Agent': 'spencermountain@gmail.com'
         }).then((docList) => {
             let allLinks = docList.map(doc => {
-                let date = null
-                const infobox = doc.infobox(0)
-                const name = doc.options.title || (infobox.get('name') || infobox.get('birth_name')).data.text
-                try {
-                    date = infobox.get('birth_date').data.text
-                } catch (err) {
-                    date = null
-                }
+                let date = null, reputation = ''
+                const image = doc.images(0) ? doc.images(0).thumb() : 'http://127.0.0.1:8080/src/scientist.jpeg';
+                const name = doc.options.title || getAccomplishment({
+                    doc,
+                    fields: ['name', 'birth_name']
+                });
+                reputation = getAccomplishment({
+                    doc,
+                    fields: ['notable_ideas', 'fields', 'awards', 'occupation']
+                });
+                date = getAccomplishment({
+                    doc,
+                    fields: ['birth_date']
+                });
                 return {
                     name,
-                    date
+                    date,
+                    reputation,
+                    image
                 }
             });
             return (allLinks);
-        }
-        )
+        })
     }
     const requestData = _ => {
         $.ajax({
@@ -100,15 +127,14 @@ $(() => {
                         value: 0,
                         name: item.name,
                         ...currentItem,
-                        date: formatDate
+                        date: formatDate,
+                        leftLabel: item.reputation,
+                        image: item.image
                     };
                 });
                 localStorage.barData = JSON.stringify(barData)
                 draw(barData)
-            }
-            )
-
-
+            })
         })
     }
     // requestData()

@@ -7,6 +7,10 @@
  */
 // import * as d3 from 'd3';
 // require("./stylesheet.css");
+config = {
+    ...config,
+    rightImg: true
+}
 $('#inputfile').change(function () {
     $('#inputfile').attr('hidden', true);
     var r = new FileReader();
@@ -248,15 +252,26 @@ function draw(data) {
 
         // 左1文字
         var topInfo = g.insert("text")
-            .attr("class", "growth")
+            .attr("class", "growth ellipse left")
             .attr("x", 0)
-            .attr("y", text_y).text(itemLabel);
-
-        // 右1文字
-        g.insert("text")
-            .attr("class", "growth")
-            .attr("x", text_x)
-            .attr("y", text_y).text(typeLabel);
+            .attr("y", text_y)
+            .insert('textPath')
+            .text(itemLabel)
+        if (config.rightImg) {
+            g.append("svg:image")
+                .attr("class", "growth right")
+                .attr("xlink:href", "")
+                .attr("x", text_x)
+                .attr("y", text_y)
+                .attr("width", "120")
+                .attr("height", "120");
+        } else {
+            // 右1文字
+            g.insert("text")
+                .attr("class", "growth")
+                .attr("x", text_x)
+                .attr("y", text_y).text(typeLabel);
+        }
 
         // 榜首日期计数
         if (use_counter == true) {
@@ -334,6 +349,8 @@ function draw(data) {
                     counter.value = 1;
                 }
                 lastname = d.name
+                d3.select('.growth.left textPath').text(d.leftLabel);
+                d3.select('.growth.right').attr("xlink:href", d.image)
                 return d.name;
             });
 
@@ -645,7 +662,7 @@ function draw(data) {
         i++;
 
         if (i >= time.length) {
-//             window.clearInterval(inter);
+            //             window.clearInterval(inter);
         }
 
     }, 3000 * interval_time);

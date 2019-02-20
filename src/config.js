@@ -1,4 +1,4 @@
-﻿const config = {
+﻿let config = {
   // 数据源的编码方式。
   // 默认为GBK,按需可修改为UTF-8等。
   // 如果输入的数据是用Excel编写的csv文件，那么大概率应该使用GBK。

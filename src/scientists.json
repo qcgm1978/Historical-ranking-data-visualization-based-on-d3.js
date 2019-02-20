@@ -3,270 +3,347 @@
         "type": "University of Vienna",
         "value": "273",
         "name": "Sigmund Freud",
-        "date": "1856-05-06"
+        "date": "1856-05-06 0:0",
+        "leftLabel": "Neurology, psychotherapy, psychoanalysis",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Sigmund_Freud%2C_by_Max_Halberstadt_(cropped).jpg?width=300"
     },
     {
         "type": "Osaka University",
         "value": "262",
         "name": "Shizuo Akira",
-        "date": "1953-01-27"
+        "date": "1953-01-27 0:0",
+        "leftLabel": "Immunology;innate host defense mechanisms",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "Washington University in St Louis",
         "value": "279",
         "name": "Graham Colditz",
-        "date": "1954-11-01"
+        "date": "1954-11-01 0:0",
+        "leftLabel": "Niess-Gain Professor Washington University School of Medicine Associate Director Alvin J. Siteman Cancer Center",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "Collège de France",
         "value": "256",
         "name": "Michel Foucault",
-        "date": "1926-10-15"
+        "date": "1926-10-15 0:0",
+        "leftLabel": "Biopower (biopolitics), disciplinary institution, discourse analysis, discursive formation, dispositif, épistémè, \"genealogy\", governmentality, heterotopia, limit-experience, power-knowledge, panopticism, subjectivation (assujettissement), parrhesia, visibilités",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Foucault5.jpg?width=300"
     },
     {
         "type": "Centre de Sociologie Européenne; Collège de France",
         "value": "259",
         "name": "Pierre Bourdieu",
-        "date": "1930-08-01"
+        "date": "1930-08-01 0:0",
+        "leftLabel": "Cultural capital·Field·Habitus·Doxa·Social Illusion·Reflexivity·Social capital·Symbolic capital·Symbolic violence·Practice theory",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Pierre_Bourdieu_1969_(cropped).tif?width=300"
     },
     {
         "type": "Broad Institute Harvard MIT",
         "value": "252",
         "name": "Eric Lander",
-        "date": "1957-02-03"
+        "date": "1957-02-03 0:0",
+        "leftLabel": "MacArthur Fellowship (1987) Woodrow Wilson Award for Public Service (1998) Dickson Prize (1997) Gairdner Award (2002) Harvey Prize (2012) Breakthrough Prize in Life Sciences (2013) Killian Award (2017)",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Dr_Eric_Lander%2C_Director_of_the_Broad_Institute_of_MIT_and_Harvard.jpg?width=300"
     },
     {
         "type": "",
         "value": 0,
         "name": "Robert S. Langer",
-        "date": "1948-08-29"
+        "date": "1948-08-29 0:0",
+        "leftLabel": "Chemical Engineering",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Robert_Langer_MTMLecture_2008_09_25_portrait.JPG?width=300"
     },
     {
         "type": "Brigham and Women's Hospital Harvard Medical School",
         "value": "259",
         "name": "Eugene Braunwald",
-        "date": "1929-08-15"
+        "date": "1929-08-15 0:0",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "Johns Hopkins University",
         "value": "251",
         "name": "Bert Vogelstein",
-        "date": "1949-06-02"
+        "date": "1949-06-02 0:0",
+        "leftLabel": "Oncology, Pediatrics",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Bert_Vogelstein_giving_the_Trent_Lecture.jpg?width=300"
     },
     {
         "type": "McMaster University",
         "value": "233",
         "name": "Gordon Guyatt",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/GG_2018.2.jpg?width=300"
     },
     {
         "type": "McMaster University",
         "value": "234",
         "name": "Salim Yusuf",
-        "date": "1952-11-26"
+        "date": "1952-11-26 0:0",
+        "leftLabel": "Rhodes Scholarship Canadian Medical Hall of Fame Canada Gairdner Wightman Award",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "University of California San Diego",
         "value": "237",
         "name": "Michael Karin",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "leftLabel": "Pharmacology",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "Ohio State University",
         "value": "218",
         "name": "Carlo Croce",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "leftLabel": "",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "",
         "value": 0,
         "name": "Paul Ridker",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "University College London",
         "value": "216",
         "name": "Chris Frith",
-        "date": "1942-03-16"
+        "date": "1942-03-16 0:0",
+        "leftLabel": "Fyssen Foundation Prize Jean Nicod Prize European Latsis Prize",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "Scripps Research Institute",
         "value": "217",
         "name": "Eric Topol",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "Georgia Institute of Technology",
         "value": "216",
         "name": "Zhong Lin Wang",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "leftLabel": "Physics Materials Science and Engineering",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Professor_Zhong_Lin_Wang.jpg?width=300"
     },
     {
         "type": "",
         "value": 0,
         "name": "Kenneth W. Kinzler",
-        "date": "1962-01-30"
+        "date": "1962-01-30 0:0",
+        "leftLabel": "oncology, bioinformatics",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "",
         "value": 0,
         "name": "Matthias Mann",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "leftLabel": "Mass spectrometry",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Matthias_Mann_LectureZurich.JPG?width=300"
     },
     {
         "type": "",
         "value": 0,
         "name": "Karl J. Friston",
-        "date": "1959-07-12"
+        "date": "1959-07-12 0:0",
+        "leftLabel": "Neuroscience",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "INSERM",
         "value": "213",
         "name": "Guido Kroemer",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "leftLabel": "Mitochondrion",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "",
         "value": 0,
         "name": "Doug Altman",
-        "date": "1948-07-12"
+        "date": "1948-07-12 0:0",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Doug_altman.jpeg?width=300"
     },
     {
         "type": "Harvard Medical School",
         "value": "212",
         "name": "Peter Libby",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "leftLabel": "Brigham and Women's Hospital",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "National Institutes of Health NIH",
         "value": "206",
         "name": "Daniel Levy",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "leftLabel": "",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "Georgia Institute of Technology",
         "value": "210",
         "name": "Younan Xia",
-        "date": "1965-10-16"
+        "date": "1965-10-16 0:0",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "École des Hautes Études en Sciences Sociales de Paris EHESS",
         "value": "199",
         "name": "Jacques Derrida",
-        "date": "1930-07-15"
+        "date": "1930-07-15 0:0",
+        "leftLabel": "Deconstruction · différance · phallogocentrism · free play · archi-writing · metaphysics of presence · invagination · pharmakon · trace · hauntology",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Https%3A%2F%2Fgoo.gl%2Fimages%2FiNhHUd?width=300"
     },
     {
         "type": "",
         "value": 0,
         "name": "Alan J. Heeger",
-        "date": "1936-01-22"
+        "date": "1936-01-22 0:0",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Heeger%2C_Alan_J._(1936).jpg?width=300"
     },
     {
         "type": "Princeton University",
         "value": "197",
         "name": "Albert Einstein",
-        "date": "1879-03-14"
+        "date": "1879-03-14 0:0",
+        "leftLabel": "Physics, philosophy",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Einstein_1921_by_F_Schmutzer_-_restoration.jpg?width=300"
     },
     {
         "type": "Harvard University",
         "value": "196",
         "name": "Amartya Sen",
-        "date": "1933-11-03"
+        "date": "1933-11-03 0:0",
+        "leftLabel": "Nobel Memorial Prize in Economic Sciences (1998)\nBharat Ratna (1999)\nNational Humanities Medal (2012) \nJohan Skytte Prize in Political Science (2017)",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Amartya_Sen_%2C_c2000_(4379246038).jpg?width=300"
     },
     {
         "type": "National Institutes of Health NIH",
         "value": "194",
         "name": "Eugene Koonin",
-        "date": "1956-10-26"
+        "date": "1956-10-26 0:0",
+        "leftLabel": "Computational Biology",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Eugene_Koonin.jpg?width=300"
     },
     {
         "type": "Memorial Sloan Kettering Cancer Center",
         "value": "194",
         "name": "Craig Thompson",
-        "date": "1975-09-21"
+        "date": "1975-09-21 0:0",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Craig_Thompson_BBF_2011_Shankbone.JPG?width=300"
     },
     {
         "type": "Harvard University",
         "value": "198",
         "name": "Eric Rimm",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "leftLabel": "Epidemiology Nutrition science",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "",
         "value": 0,
         "name": "Dennis S. Charney",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "leftLabel": "Biological psychiatry",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Dennis_S._Charney%2C_MD.jpg?width=300"
     },
     {
         "type": "University of Chicago",
         "value": "188",
         "name": "Robert Gardner",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "leftLabel": "",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "Royal Holloway University of London",
         "value": "187",
         "name": "Glen Cowan",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "European Molecular Biology Laboratory",
         "value": "186",
         "name": "Peer Bork",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Peer_Bork.jpg?width=300"
     },
     {
         "type": "Stanford University",
         "value": "184",
         "name": "Albert Bandura",
-        "date": "1925-12-04"
+        "date": "1925-12-04 0:0",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Albert_Bandura_Psychologist.jpg?width=300"
     },
     {
         "type": "University of Glasgow",
         "value": "184",
         "name": "Thomas Doherty",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "leftLabel": "",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "",
         "value": 0,
         "name": "Joan Massagué",
-        "date": "1953-04-30"
+        "date": "1953-04-30 0:0",
+        "leftLabel": "cancer biology",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Joan_Massagu%C3%A9_in_suit.jpg?width=300"
     },
     {
         "type": "Istituto Clinico Humanitas; Università degli Studi di Milano",
         "value": "184",
         "name": "Alberto Mantovani",
-        "date": "1948-10-29"
+        "date": "1948-10-29 0:0",
+        "leftLabel": "Immunology",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Alberto_Mantovani_medico.jpg?width=300"
     },
     {
         "type": "Centro Nacional de Investigaciones Cardiovasculares CNIC",
         "value": "183",
         "name": "Valentin Fuster",
-        "date": "1943-01-01"
+        "date": "1943-01-01 9:0",
+        "leftLabel": "Cardiologist",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Valentin_Fuster.png?width=300"
     },
     {
         "type": "University of Oxford",
         "value": "183",
         "name": "Daniela Bortoletto",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "McGill University",
         "value": "182",
         "name": "Alan Evans",
-        "date": "1949-06-14"
+        "date": "1949-06-14 0:0",
+        "image": "https://wikipedia.org/wiki/Special:Redirect/file/Alanevansdarts.png?width=300"
     },
     {
         "type": "Stanford University",
         "value": "181",
         "name": "Hongjie Dai",
-        "date": "1966-05-02"
+        "date": "1966-05-02 0:0",
+        "leftLabel": "Chemistry",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     },
     {
         "type": "University of Chicago; University of Tokyo; RIKEN; University of Utah",
         "value": "180",
         "name": "Yusuke Nakamura",
-        "date": "1970-01-01"
+        "date": "NaN-0NaN-0NaN NaN:NaN",
+        "leftLabel": "",
+        "image": "http://127.0.0.1:8080/src/scientist.jpeg"
     }
 ]

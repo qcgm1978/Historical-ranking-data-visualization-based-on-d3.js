@@ -223,3 +223,11 @@ input {
     fill: #cf9237
 }
 
+.ellipse {
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+}
+.right{
+    transform: translate(0,-100px);
+}
