@@ -213,7 +213,7 @@ function draw(data) {
         rate = [];
         currentData = [];
         data.forEach(element => {
-            if (element["date"] == date && parseFloat(element['value']) != 0) {
+            if (/* element["date"] == date */new Date(element['date']).getTime() < new Date(date).getTime() && parseFloat(element['value']) != 0) {
                 currentData.push(element);
             }
         });
@@ -645,13 +645,13 @@ function draw(data) {
         i++;
 
         if (i >= time.length) {
-            window.clearInterval(inter);
+//             window.clearInterval(inter);
         }
 
     }, 3000 * interval_time);
     setInterval(() => {
 
-        console.log(currentData);
+        //         console.log(currentData);
         d3.transition()
             .each(change)
     }, 3000 * update_rate * interval_time)
