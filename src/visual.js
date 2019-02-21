@@ -250,13 +250,35 @@ function draw(data) {
 
     if (showMessage) {
 
+
         // 左1文字
-        var topInfo = g.insert("text")
+        const text = g.append("text")
+
+
+
+        var startingPath = getStartingPath();
+        const letters = "Click and drag to change the text's path"
+        function getStartingPath() {
+            return `m 0,-50 L 380,-50`;
+        }
+
+        var textPath = g.append("defs").append("path")
+            .attr("id", "textPath")
+            .attr("d", startingPath);
+
+        var path = g.append("path")
+            .attr("d", startingPath);
+
+        text
             .attr("class", "growth ellipse left")
             .attr("x", 0)
             .attr("y", text_y)
-            .insert('textPath')
-            .text(itemLabel)
+            .append("textPath")
+            .attr("xlink:href", "#textPath")
+        // .text(letters);
+
+
+        // .text(itemLabel)
         if (config.rightImg) {
             g.append("svg:image")
                 .attr("class", "growth right")
