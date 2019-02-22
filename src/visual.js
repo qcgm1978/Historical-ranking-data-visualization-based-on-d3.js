@@ -11,6 +11,8 @@ config = {
     ...config,
     rightImg: true
 }
+var currentData = [], country = '';
+
 $('#inputfile').change(function () {
     $('#inputfile').attr('hidden', true);
     var r = new FileReader();
@@ -22,12 +24,12 @@ $('#inputfile').change(function () {
     }
 });
 
-function draw(data) {
+function draw(data, varyField, judgeLogic) {
     $('#inputfile').attr('hidden', true);
     var date = [];
     data.forEach(element => {
-        if (date.indexOf(element["date"]) == -1) {
-            date.push(element["date"]);
+        if (date.indexOf(element[varyField]) == -1) {
+            date.push(element[varyField]);
         }
     });
     let rate = [];
@@ -42,11 +44,11 @@ function draw(data) {
     var divide_by = config.divide_by;
     var name_list = []
     var changeable_color = config.changeable_color;
-    data.sort((a, b) => Number(b.value) - Number(a.value)).forEach(e => {
-        if (name_list.indexOf(e.name) == -1) {
-            name_list.push(e.name)
-        }
-    })
+    //     data.sort((a, b) => Number(b.value) - Number(a.value)).forEach(e => {
+    //         if (name_list.indexOf(e.name) == -1) {
+    //             name_list.push(e.name)
+    //         }
+    //     })
 
     var colorRange = d3.interpolateCubehelix("#003AAB", "#01ADFF")
     // 选择颜色
@@ -109,7 +111,6 @@ function draw(data) {
     interval_time /= 3;
     var lastData = [];
     var currentdate = time[0].toString();
-    var currentData = [];
     var lastname;
     const svg = d3.select('svg');
 
@@ -212,18 +213,21 @@ function draw(data) {
             });
         }
     }
-
+    const hasCurrentData = ({ element, date }) => {
+        return new Date(element['date']).getTime() < new Date(date).getTime()
+    }
     function getCurrentData(date) {
         rate = [];
-        currentData = [];
-        data.forEach(element => {
-            if (/* element["date"] == date */new Date(element['date']).getTime() < new Date(date).getTime() && parseFloat(element['value']) != 0) {
-                currentData.push(element);
-            }
-        });
+        // data.forEach(element => {
+        //     if (/* element["date"] == date */(judgeLogic || hasCurrentData)({ element, date }) && parseFloat(element['value']) != 0) {
+        //         currentData.push(element);
+        //     }
+        // });
 
         rate['MAX_RATE'] = 0;
         rate['MIN_RATE'] = 1;
+        currentData = data.slice(0, date + 1);
+        country = currentData[i].country;
         currentData.forEach(e => {
             _cName = e.name
             lastData.forEach(el => {
@@ -240,6 +244,7 @@ function draw(data) {
                 rate['MIN_RATE'] = rate[e.name]
             }
         })
+        currentData.sort((a, b) => +b.value - +a.value)
         currentData = currentData.slice(0, max_number);
 
         d3.transition("2")
@@ -349,7 +354,7 @@ function draw(data) {
                 });
 
         } else {
-            dateLabel.text(currentdate);
+            dateLabel.text(`${currentdate}--${country}`);
         }
 
         xAxisG.transition().duration(3000 * interval_time).ease(d3.easeLinear).call(xAxis);
@@ -671,7 +676,7 @@ function draw(data) {
 
     var i = 0;
     var p = config.wait;
-    var update_rate = config.update_rate
+    var update_rate = config.update_rate;
     var inter = setInterval(function next() {
 
         // 空过p回合
@@ -680,11 +685,11 @@ function draw(data) {
             return;
         }
         currentdate = time[i];
-        getCurrentData(time[i]);
+        getCurrentData(i);
         i++;
 
         if (i >= time.length) {
-            //             window.clearInterval(inter);
+            window.clearInterval(inter);
         }
 
     }, 3000 * interval_time);

@@ -104,39 +104,51 @@ $(() => {
             return (allLinks);
         })
     }
-    const requestData = _ => {
+    const requestData = ({ url, varyField = "date", name = 'name', judgeLogic }) => {
         $.ajax({
             // request type ( GET or POST )
             type: "GET",
 
             // the URL to which the request is sent
-            url: './researchers.csv'
+            url
         }).then(result => {
             let data = d3.csvParse(result);
-            const len = data.length
-            const requestNames = data.reduce((acc, item) => acc.concat([item.name]), [])
+            let len = data.length
+            len = 10
+            const requestNames = data.reduce((acc, item) => acc.concat([item[name]]), [])
             getBornDate(requestNames.slice(0, len)).then(names => {
-                const barData = names.map((item, i) => {
-                    const currentItem = data.find(it => it.name === item.name)
-                    const date = new Date(item.date);
-                    const month = date.getMonth() + 1;
-                    const day = date.getDate();
-                    const formatDate = `${date.getFullYear()}-${month >= 10 ? month : ('0' + month)}-${day >= 10 ? day : '0' + day} ${date.getHours()}:${date.getMinutes()}`
-                    return {
-                        type: '',
-                        value: 0,
-                        name: item.name,
-                        ...currentItem,
-                        date: formatDate,
-                        leftLabel: item.reputation,
-                        image: item.image
-                    };
-                });
-                localStorage.barData = JSON.stringify(barData)
-                draw(barData)
+                let barData = []
+                if (names.length) {
+                    barData = names.map((item, i) => {
+                        const currentItem = data.find(it => it[name] === item[name])
+                        const date = new Date(item.date);
+                        const month = date.getMonth() + 1;
+                        const day = date.getDate();
+                        const formatDate = `${date.getFullYear()}-${month >= 10 ? month : ('0' + month)}-${day >= 10 ? day : '0' + day} ${date.getHours()}:${date.getMinutes()}`
+                        return {
+                            type: '',
+                            value: 0,
+                            name: item[name],
+                            ...currentItem,
+                            date: formatDate,
+                            leftLabel: item.reputation,
+                            image: item.image
+                        };
+                    });
+                    localStorage.barData = JSON.stringify(barData)
+                } else {
+                    console.log('no wiki data')
+                    barData = data
+                }
+                draw(barData, varyField, judgeLogic)
             })
         })
     }
-    // requestData()
-    draw(JSON.parse(localStorage.barData))
+    requestData({
+        url: './startups.csv', varyField: 'value', judgeLogic({ element, date }) {
+            return +element['value'] >= +date
+        }
+    })
+    // requestData({ url: './researchers.csv'})
+    // draw(JSON.parse(localStorage.barData))
 })
