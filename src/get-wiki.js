@@ -122,7 +122,9 @@ $(() => {
     url,
     varyField = "date",
     name = "name",
-    judgeLogic
+    judgeLogic,
+    enableWiki = true
+    // focusedData=
   }) => {
     $.ajax({
       // request type ( GET or POST )
@@ -138,7 +140,10 @@ $(() => {
         (acc, item) => acc.concat([item[name]]),
         []
       );
-      getBornDate(requestNames.slice(0, len)).then(names => {
+      const request = enableWiki
+        ? getBornDate(requestNames.slice(0, len))
+        : Promise.resolve([]);
+      request.then(names => {
         let barData = [];
         if (names.length) {
           barData = names.map((item, i) => {
@@ -180,6 +185,7 @@ $(() => {
   //         return +element['value'] >= +date
   //     }
   // })
-  requestData({ url: "./researchers.csv" });
+  requestData({ url: "./box-office.csv", enableWiki: false });
+  // requestData({ url: "./researchers.csv" });
   // draw(JSON.parse(localStorage.barData))
 });
