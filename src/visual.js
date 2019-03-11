@@ -52,6 +52,16 @@ function draw(data, varyField, judgeLogic) {
   //     })
 
   var colorRange = d3.interpolateCubehelix("#003AAB", "#01ADFF");
+  // var color = d3.scaleCategory20();
+  var color = () => {
+    let color =
+      "#" +
+      Math.floor((Math.random() * Math.pow(2, 32)) ^ 0xffffff)
+        .toString(16)
+        .substr(-6);
+    console.log(color);
+    return color;
+  };
   // 选择颜色
   function getColor(d) {
     var r = 0.0;
@@ -450,7 +460,9 @@ function draw(data, varyField, judgeLogic) {
       .attr("fill-opacity", 0)
       .attr("height", 26)
       .attr("y", 50)
-      .style("fill", d => getColor(d))
+      .style("fill", function(d, i) {
+        return color(i);
+      })
       .transition("a")
       .delay(500 * interval_time)
       .duration(2490 * interval_time)
@@ -462,7 +474,9 @@ function draw(data, varyField, judgeLogic) {
       .append("text")
       .attr("y", 50)
       .attr("fill-opacity", 0)
-      .style("fill", d => getColor(d))
+      .style("fill", function(d, i) {
+        return color(i);
+      })
       .transition("2")
       .delay(500 * interval_time)
       .duration(2490 * interval_time)
@@ -491,7 +505,9 @@ function draw(data, varyField, judgeLogic) {
           return xScale(currentData[currentData.length - 1].value);
         }
       })
-      .attr("stroke", d => getColor(d))
+      .attr("stroke", function(d, i) {
+        return color(i);
+      })
       .attr("class", function() {
         return "barInfo";
       })
@@ -561,7 +577,9 @@ function draw(data, varyField, judgeLogic) {
         })
         .attr("y", 50)
         .attr("fill-opacity", 0)
-        .style("fill", d => getColor(d))
+        .style("fill", function(d, i) {
+          return color(i);
+        })
         .transition()
         .duration(2990 * interval_time)
         .tween("text", function(d) {
@@ -594,7 +612,9 @@ function draw(data, varyField, judgeLogic) {
 
     barUpdate
       .select("rect")
-      .style("fill", d => getColor(d))
+      .style("fill", function(d, i) {
+        return color(i);
+      })
       .attr("width", d => xScale(xValue(d)));
 
     barUpdate
@@ -602,7 +622,9 @@ function draw(data, varyField, judgeLogic) {
       .attr("class", function(d) {
         return "label ";
       })
-      .style("fill", d => getColor(d))
+      .style("fill", function(d, i) {
+        return color(i);
+      })
       .attr("width", d => xScale(xValue(d)));
     if (!long) {
       barUpdate
@@ -610,7 +632,9 @@ function draw(data, varyField, judgeLogic) {
         .attr("class", function(d) {
           return "value";
         })
-        .style("fill", d => getColor(d))
+        .style("fill", function(d, i) {
+          return color(i);
+        })
         .attr("width", d => xScale(xValue(d)));
     }
     barUpdate.select(".barInfo").attr("stroke", function(d) {

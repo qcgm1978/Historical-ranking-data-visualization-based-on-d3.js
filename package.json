@@ -6,11 +6,14 @@
   "dependencies": {
     "_jquery@3.3.1@jquery": "^3.3.1",
     "d3": "^5.9.1",
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0"
   },
   "devDependencies": {},
   "scripts": {
     "serve": "http-server && open http://127.0.0.1:8080/src/bargraph.html",
+    "server": "nodemon --inspect=127.0.0.1:9335 server/app1.js",
     "start": "nodemon node.js visual.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
