@@ -190,7 +190,7 @@ $(() => {
   var sound = new Howl({
     src: ["Ocean To Ocean.mp3"]
   });
-  sound.play();
+  sound.play(); //need gesture on web or modify according to this: https://github.com/Tonejs/Tone.js/issues/341
   requestData({ url: "./box-office.csv", enableWiki: false });
   // requestData({ url: "./researchers.csv" });
   // draw(JSON.parse(localStorage.barData))
