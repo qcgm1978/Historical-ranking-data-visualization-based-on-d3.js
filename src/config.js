@@ -37,7 +37,7 @@
   itemLabel: "左侧文字",
   typeLabel: "右侧文字",
   // 榜首项目信息的水平位置 。
-  item_x: 400,
+  item_x: 200,
 
   // 时间点间隔时间。
   interval_time: 1,

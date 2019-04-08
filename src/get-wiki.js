@@ -185,6 +185,12 @@ $(() => {
   //         return +element['value'] >= +date
   //     }
   // })
+  // $("svg").width($(window).width());
+  // $("svg").height($(window).height());
+  var sound = new Howl({
+    src: ["Ocean To Ocean.mp3"]
+  });
+  sound.play();
   requestData({ url: "./box-office.csv", enableWiki: false });
   // requestData({ url: "./researchers.csv" });
   // draw(JSON.parse(localStorage.barData))
